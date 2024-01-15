@@ -9,23 +9,37 @@ header {
   justify-content: space-between;
 }
 
-.img-logo {
+header img {
   max-height: 100px;
 }
 
-
 .nav-menu {
-display: flex;
-align-items: center;
-padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+span svg {
+  max-width: 20px;
+  display: flex;
 }
 
 a {
-  padding: 10px;
-  
+
+width: 150px;
 }
 
-main {
-  height: 30vh;
-  width: 200vh;
+.icon {  
+display: flex;
+justify-content: space-around;
+}
+
+section img {
+  max-height: 400px;
+}
+
+footer {
+  background-color: #47555E;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
