@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #47555E;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-logo {
+  max-height: 100px;
+}
+
+
+.nav-menu {
+display: flex;
+justify-content: end;
+justify-items: center;
+background-color: red;
+}
+
+a {
+  padding: 20px;
+  display: flex;
+  justify-items:first base;
+}
+
+main {
+  height: 30vh;
+  width: 200vh;
+}
