@@ -20,6 +20,12 @@ padding: 5px;
 color: #fff;
 }
 
+footer {
+  position: relative;
+  position: fixed;
+  bottom: 0;
+}
+
 header , footer {
   justify-content: space-between;
 }
@@ -31,7 +37,7 @@ header a, footer a {
   align-items: center;
 }
 
-header nav svg {
+header nav svg, footer svg {
   fill: #f1f3f8;
   display: flex;
   align-items: center;
@@ -58,4 +64,13 @@ footer a:hover  {
 
 #hamburger {
   display: none;
+}
+
+
+
+footer {
+  position:absolute;
+  position: fixed;
+  bottom: 0;
+  width: 99.7vw;
 }
