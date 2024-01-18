@@ -1,35 +1,23 @@
+@charset "UTF-8"
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kenia&family=Martel:wght@700&family=Montserrat&family=Raleway:wght@300;400;500;600&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
 }
-
-
 
 header ,footer {
   background-color: #47555E;
   display: flex;
-  justify-content: space-between;
+  justify-content: row;
   align-items:center;
-}
-
-header img {
-  max-width: 100px;
-}
-
-nav a {
-  padding: 20px;
-text-decoration: none;
-color: black;
-}
-
-nav a:hover {
   color: #fff;
 }
 
-main {
-  height: 500px;
-}
-
-footer {
-  position:absolut;
+header a, footer a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
