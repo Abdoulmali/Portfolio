@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+header ,footer {
+  background-color: #47555E;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+header img {
+  max-width: 100px;
+}
+
+nav a {
+  padding: 20px;
+text-decoration: none;
+color: black;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+main {
+  height: 500px;
+}
+
+footer {
+  position:absolut;
+}
