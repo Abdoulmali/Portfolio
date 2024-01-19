@@ -74,3 +74,13 @@ footer {
   bottom: 0;
   width: 99.7vw;
 }
+
+/* style Mobile */
+@media screen and (max-width: 1000px) {
+  #navbar {
+    display: none;
+  }
+  #hamburger {
+    background-color: #fff;
+  }
+}
