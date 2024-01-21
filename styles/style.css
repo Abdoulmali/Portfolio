@@ -85,7 +85,7 @@ footer {
   width: 99.7vw;
 }
 
-/* style Mobile 
+/* style Mobile */
 @media screen and (max-width: 1000px) {
   header {
     position: relative;
@@ -140,18 +140,17 @@ footer {
     transform: rotate(-45deg);
   } 
   img {
-    width: 100%;
-    height: 80%;
-    position:absolute;
-    text-align: center;
-    display: none;
+  width: 120%;
+  z-index: -1;
   }
   
   main h1 {
     position: absolute;
     top: 35%;
-    left: 30%;
+    left: 20%;
     color: #f1f3f8;
+    font-size: 70px;
+    z-index: -1;
   }
 }
 
@@ -163,5 +162,5 @@ footer {
   header #hamburger {
     display: none;
   }
-}   */
+}   
 
