@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+body {
+  overflow-y:  hidden;
+}
+
 header img {
   max-width: 100px;
 }
@@ -51,51 +55,37 @@ header a:hover, nav a:hover  {
   box-shadow: 2px 2px 4px #f1f3f8;
 }
 
-h1 {
-  font-family: "Dancing Script", cursive;
+main {
+  margin: 20px;
+}
+
+main h1 {
+  font-family: "Dancing script", cursive;
   text-align: center;
-
-}
-
-#hamburger {
-  display: none;
-}
-
-section img {
-  max-width: 100px;
-}
-
-.content-galerie {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.carte-galerie{
-  flex-row
-}
-
-.carte-galerie:nth-child(2n){
-
 }
 
 section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  justify-content: start;
   align-items: center;
 }
 
+section div {
 
-main span {
+}
+.star {
   margin: 20px;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: #f1f3f8;
-  padding: 10px;
+}
+section svg {
+  max-width: 15px;
+  background-color: red;
 }
 
-main h2 {
-  font-size: 20px;
+
+
+#hamburger {
+  display: none;
 }
 
 footer a:hover  {
