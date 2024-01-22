@@ -1,3 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kenia&family=Martel:wght@700&family=Montserrat&family=Raleway:wght@300;400;500;600&display=swap");
 @import "variable";
 //@import "laptop";
-@import "mobile";
+ * {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+ }
+
+header, footer {
+  background-color: $accent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1px;
+  justify-content: space-between;
+}
+
+header {
+  a{
+    display: flex;
+    flex-direction: row;
+    color:$light;
+    padding: 0.5rem;
+  }
+  a{
+    &:hover{
+      box-shadow: 2px 2px 4px $light;
+    }
+  }
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content:end;
+}
+.icon-content{
+  width: 1rem;
+}
+svg {
+  width: 100%;
+  justify-content:end;
+  fill: $light;
+}
+}
+
+
+/* le main du site */
+main {
+  img {
+   width: 100%;
+   position:inherit;
+    }
+    h1{
+      font-family: "Dancing Script", cursive;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      font-size: 5rem;
+      color: $light;
+    }
+}
+
+footer {
+  a{
+    display: flex;
+color: $light;
+  }
+  a:hover{
+    box-shadow: 2px 2px 4px $light;
+  }
+  position: absolute;
+  width: 100%;
+}
+#hamburger {
+  border: 2px solid blue;
+  display: none;
+}
+
+
+
+
+
