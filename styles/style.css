@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kenia&family=Martel:wght@700&family=Montserrat&family=Raleway:wght@300;400;500;600&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 header, footer {
@@ -38,25 +37,24 @@ header svg {
 }
 
 /* le main du site */
+main {
+  background-color: blue;
+  flex-grow: 1;
+}
 main img {
   width: 100%;
-  position: inherit;
+  position: absolute;
 }
 main h1 {
   font-family: "Dancing Script", cursive;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
   font-size: 5rem;
   color: #f1f3f8;
 }
 
-footer {
-  position: absolute;
-  width: 100%;
-}
 footer a {
   display: flex;
+  margin: 10px;
+  padding: 10px;
   color: #f1f3f8;
 }
 footer a:hover {
