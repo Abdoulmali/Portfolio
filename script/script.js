@@ -14,17 +14,18 @@ function toggleNavbar(){
 hamburger.addEventListener('click',toggleNavbar);
 
 
-// script Formulaire //
-const form = document.getElementById('contact-form');
+const form = document.querySelector('form');
 
-form.addEventListener('submit', (event) => {
-event.preventDefault();
+const submitButton = document.querySelector('button[type="submit"]');
 
-const formData = new FormData(form);
+submitButton.addEventListener('click', checkForm);
+function checkForm(event) {
+  event.preventDefault();
 
-const name = formData.get('name');
-const email = formData.get('email');
-const message = formData.get('message')
-
-form.requestFullscreen();
-})
+  const isEmpty = Array.form(form.elements).some(field => field.value.trim() == '');
+  if (isEmpty) {
+    alert('Veuillez remplir tous les champs du formulaire.');
+    return false;
+  }
+  form.submit();
+} 
