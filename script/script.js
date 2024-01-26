@@ -1,5 +1,5 @@
-const hamburger = document.getElementById("hamburger");
-const navbar = document.getElementById("navbar");
+const hamburger = document.getElementById('hamburger');
+const navbar = document.getElementById('navbar');
 
 function toggleNavbar(){
   if(!hamburger.classList.contains('close')){
@@ -19,10 +19,12 @@ const form = document.querySelector('form');
 const submitButton = document.querySelector('button[type="submit"]');
 
 submitButton.addEventListener('click', checkForm);
+
 function checkForm(event) {
   event.preventDefault();
+  event.stopPropagation();
 
-  const isEmpty = Array.form(form.elements).some(field => field.value.trim() == '');
+  const isEmpty = Array.from(form.elements).some(field => field.value.trim() = '');
   if (isEmpty) {
     alert('Veuillez remplir tous les champs du formulaire.');
     return false;
