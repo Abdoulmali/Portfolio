@@ -1,17 +1,18 @@
 const hamburger = document.getElementById('hamburger');
-const navbar = document.getElementById('navbar');
+const nav = document.getElementById('navbar');
 
-function toggleNavbar(){
-  if(!hamburger.classList.contains('close')){
-    navbar.classList.add('open');
-    hamburger.classList.add('close');
+function toggleNav(){
+  console.log('click');
+  if(!hamburger.classList.contains('active')){
+    nav.classList.add('open');
+    hamburger.classList.add('active');
   }else{
-    navbar.classList.remove('open')
-    hamburger.classList.remove('close')
+    nav.classList.remove('open');
+    hamburger.classList.remove('active');
   }
 }
 
-hamburger.addEventListener('click',toggleNavbar);
+hamburger.addEventListener('click', toggleNav);
 
 
 const form = document.querySelector('form');
